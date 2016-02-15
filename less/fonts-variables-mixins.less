@@ -1,0 +1,63 @@
+// Fonty
+
+@font-family_zaklad:Open Sans, sans-serif;
+
+// Velikosti fontu
+
+@font-velikost_zaklad:1em; // 16px
+@font-velikost_maly:0.750em; // 12px
+@font-velikost_copyright:0.875em; //14px
+@font-velikost_navigace:1.125em; // 18px
+@nadpis-velikost_stredni:1.25em; // 20px
+@font-velikost_carousel:2.5em;
+@nadpis-velikost_h2:2.25em; // 36px
+@nadpis-velikost_hlavni:3em; // 48px
+@font-weight_bold:700;
+@font-weight_light:300;
+
+// Barvy
+
+@bila:#fff;
+@cerna: #000;
+@cerna-light:#1d1d1b;
+@seda:#7d7d7d;
+@seda-light:#f2f2f2;
+@cervena:#e84d0f;
+@obsazenost-mala:#ffc59b;
+@obsazenost-stredni:#f88c6c;
+@obsazenost-velka:#e64e21;
+
+// Mixiny
+
+.clearfix() { 
+    &:before,
+    &:after {
+        content:'';
+        display:table;
+        clear:both;
+    }
+}
+.text-shadow (@string: -1px 2px 3px rgba(0, 0, 0, 0.75)) {
+	text-shadow: @string;
+}
+.border-radius (@radius) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+.transition (@transition) {
+	-webkit-transition: @transition;  
+	-moz-transition:    @transition;
+	-ms-transition:     @transition; 
+	-o-transition:      @transition;  
+}
+.rotate(@degrees) {
+    -webkit-transform: rotate(@degrees);
+    -moz-transform: rotate(@degrees);
+    -ms-transform: rotate(@degrees);
+    -o-transform: rotate(@degrees);
+}

@@ -1,0 +1,48 @@
+// Obsah
+
+.obsah {
+    background:@seda-light;
+}
+.obsah__container {
+    padding-top:1.25em;
+    padding-bottom:1.25em;
+    width:61.75em;
+}
+.obrazek {
+    margin:0.625em 0 0;
+    .clearfix();
+    
+    @media screen and (max-width:38.438em) {
+        text-align:center;
+    }
+}
+.kava-pozice--leva {
+    padding:0 0.938em 0.938em 0;
+    
+    @media screen and (max-width:38.438em) {
+        float:none;
+        padding:0 0 0.625em;
+    }
+}
+.hint {
+    border-bottom:1px dashed @cervena;
+    cursor:help;
+}
+.sloupce {
+    margin:0.625em 0 0;
+    .clearfix();
+}
+.sloupce__obsah {
+    width:45.546558704453444%;
+    
+    &.pozice--prava {
+        width:39.473684210526316%;
+        
+        @media screen and (max-width:40.625em) {
+            width:100%;
+        }
+    }
+    @media screen and (max-width:40.625em) {
+        width:100%;
+    }
+}

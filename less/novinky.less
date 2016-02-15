@@ -1,0 +1,23 @@
+// Novinky
+
+.novinky {
+    text-align:center;
+    padding:1.563em 0;
+    span,
+    a {
+        display:inline-block;
+    }
+    .novinky__obsah {
+        margin:0 1.563em 0 0.625em;
+        
+        @media screen and (max-width:49.688em) {
+            width:100%;
+            margin:0;
+        }
+    }
+    .novinky__cas {
+        font-size:@font-velikost_maly;
+        color:@seda;
+        text-transform:uppercase;
+    }
+}
